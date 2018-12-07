@@ -11,7 +11,8 @@
 		3103B57321B9064900ADA70B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3103B57221B9064900ADA70B /* ViewController.swift */; };
 		3103B57621B9064900ADA70B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3103B57421B9064900ADA70B /* Main.storyboard */; };
 		3103B57821B9064A00ADA70B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3103B57721B9064A00ADA70B /* Assets.xcassets */; };
-		3103B57B21B9064A00ADA70B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3103B57921B9064A00ADA70B /* LaunchScreen.storyboard */; };
+		3103B58321B9070700ADA70B /* newsAPIJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3103B58221B9070700ADA70B /* newsAPIJson.swift */; };
+		3103B58721B90FB000ADA70B /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3103B58621B90FB000ADA70B /* NewsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,8 +21,9 @@
 		3103B57221B9064900ADA70B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3103B57521B9064900ADA70B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3103B57721B9064A00ADA70B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3103B57A21B9064A00ADA70B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3103B57C21B9064A00ADA70B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3103B58221B9070700ADA70B /* newsAPIJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsAPIJson.swift; sourceTree = "<group>"; };
+		3103B58621B90FB000ADA70B /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +56,12 @@
 		3103B56F21B9064900ADA70B /* NewsAPI */ = {
 			isa = PBXGroup;
 			children = (
+				3103B58621B90FB000ADA70B /* NewsCell.swift */,
 				3103B57021B9064900ADA70B /* AppDelegate.swift */,
 				3103B57221B9064900ADA70B /* ViewController.swift */,
 				3103B57421B9064900ADA70B /* Main.storyboard */,
+				3103B58221B9070700ADA70B /* newsAPIJson.swift */,
 				3103B57721B9064A00ADA70B /* Assets.xcassets */,
-				3103B57921B9064A00ADA70B /* LaunchScreen.storyboard */,
 				3103B57C21B9064A00ADA70B /* Info.plist */,
 			);
 			path = NewsAPI;
@@ -122,7 +125,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3103B57B21B9064A00ADA70B /* LaunchScreen.storyboard in Resources */,
 				3103B57821B9064A00ADA70B /* Assets.xcassets in Resources */,
 				3103B57621B9064900ADA70B /* Main.storyboard in Resources */,
 			);
@@ -137,6 +139,8 @@
 			files = (
 				3103B57321B9064900ADA70B /* ViewController.swift in Sources */,
 				3103B57121B9064900ADA70B /* AppDelegate.swift in Sources */,
+				3103B58721B90FB000ADA70B /* NewsCell.swift in Sources */,
+				3103B58321B9070700ADA70B /* newsAPIJson.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,14 +153,6 @@
 				3103B57521B9064900ADA70B /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3103B57921B9064A00ADA70B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3103B57A21B9064A00ADA70B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -283,6 +279,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VDC8NJPWT3;
 				INFOPLIST_FILE = NewsAPI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +297,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VDC8NJPWT3;
 				INFOPLIST_FILE = NewsAPI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
